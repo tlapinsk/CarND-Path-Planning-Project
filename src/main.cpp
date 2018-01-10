@@ -274,11 +274,11 @@ int main() {
               {
                 check_lane = 0;
               } 
-              else if ( d > 4 && d < 8 ) 
+              else if (d > 4 && d < 8) 
               {
                 check_lane = 1;
               } 
-              else if (d > 8 && d < 12 ) 
+              else if (d > 8 && d < 12) 
               {
                 check_lane = 2;
               }
@@ -307,13 +307,13 @@ int main() {
             if (too_close) 
             {
               // If there is a car in front of me, try to change lanes. If not, slow down
-              if (lane - 1 >= 0 && empty_lane[lane - 1]) 
+              if (lane + 1 <= 2 && empty_lane[lane + 1]) 
               {
-                lane -= 1;
+                lane++;
               } 
-              else if (lane + 1 <= 2 && empty_lane[lane + 1]) 
+              else if (lane - 1 >= 0 && empty_lane[lane - 1]) 
               {
-                lane += 1;
+                lane--;
               } 
               else 
               {
