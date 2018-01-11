@@ -335,7 +335,7 @@ int main() {
             double ref_yaw = deg2rad(car_yaw);
 
             // If previous size is almost empty, use the car as a starting reference
-            if ( prev_size < 2 ) 
+            if (prev_size < 2) 
             {
               // Use two points that make the path tangent to the car
               double prev_car_x = car_x - cos(car_yaw);

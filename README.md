@@ -25,6 +25,10 @@ FYI, I ran my code on a Macbook Pro. Please ensure you have downloaded the Udaci
 ## Overview
 By using data sent by the simulator (car's position and velocity) and sensor fusion data about the rest of the traffic, we can direct the car to perform safe lane changes and speed up/slow down when necessary. More detailed explanation will be given of the code implemented below.
 
+Here is the longest I let the simulator run for (15+ miles successfully):
+
+![Best Output](https://github.com/tlapinsk/CarND-Kidnapped-Vehicle-Project/blob/master/output/results.png?raw=true "Best Output")
+
 ## Reflection
 The project provided the majority of the code needed to complete this project. The algorithm I used to complete this project can be found between lines 247-347 in src/main.cpp. I have loosely broken the algorithm into three parts: prediction, behavior, and trajectory.
 
