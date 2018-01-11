@@ -82,7 +82,7 @@ for (int i = 0; i < sensor_fusion.size(); i++) {
 }
 ```
 
-This chunk of code (lines 261-304) help us determine which lane we are currently in and if there is a car in front of us.
+This chunk of code (lines 261-304) helps us determine which lane we are currently in and if there is a car in front of us.
 
 ### Behavior
 This section helps determine if we should do the following:
@@ -117,7 +117,7 @@ else if (ref_vel < 49.5)
 }
 ```
 
-This code lives between ines 306-327. You can see that the car checks if a lane is empty before moving right/left. And in the worse case scenario, does a speed check to see if the car can increase velocity below 49.5mph.
+This code lives between ines 306-327. You can see that the car checks if a lane is empty before moving right/left. In the worst case scenario, it does a speed check to see if the car can increase velocity.
 
 ### Trajectory
 Most of the trajectory code was built by David and Aaron in the project walk through. This code resides between lines 329-427 and bases trajectory on the car's speed, lane, and path points.
